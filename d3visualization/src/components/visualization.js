@@ -16,14 +16,6 @@ const Visual = () => {
 				return list;
 			})
 			.then((list) => {
-				let tooltip = d3
-					.select("#canvas")
-					.append("div")
-					.style("position", "absolute")
-					.style("z-index", "300")
-					.style("visibility", "hidden")
-					.style("background", "#ffffff");
-
 				let data = list;
 				const width = 700;
 				const height = 500;
